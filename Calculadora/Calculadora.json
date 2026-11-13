@@ -1,0 +1,167 @@
+{
+  "grandezas": [
+    {
+      "id": "tensao",
+      "simbolo": "U",
+      "nome": "Tensão",
+      "unidade": "V",
+      "descricao": "A tensão elétrica (ou diferença de potencial) é a energia por unidade de carga entre dois pontos de um circuito. Mede-se em volts (V).",
+      "calculos": [
+        {
+          "id": "u-r-i",
+          "formula": "U = R × I",
+          "explicacao": "Lei de Ohm: a tensão é o produto da resistência pela corrente que a atravessa. Um valor negativo na corrente indica que o sentido é oposto ao convencional.",
+          "campos": [
+            {
+              "id": "R",
+              "label": "Resistência (Ω)"
+            },
+            {
+              "id": "I",
+              "label": "Corrente (A)"
+            }
+          ]
+        },
+        {
+          "id": "u-e-q",
+          "formula": "U = E ÷ Q",
+          "explicacao": "A tensão é a energia transferida por unidade de carga entre dois pontos. Energia e carga podem ser negativas quando representam libertação ou sentido inverso.",
+          "campos": [
+            {
+              "id": "E",
+              "label": "Energia (J)"
+            },
+            {
+              "id": "Q",
+              "label": "Carga elétrica (C)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "corrente",
+      "simbolo": "I",
+      "nome": "Corrente",
+      "unidade": "A",
+      "descricao": "A corrente elétrica é a quantidade de carga que atravessa um condutor por unidade de tempo. Mede-se em amperes (A).",
+      "calculos": [
+        {
+          "id": "i-u-r",
+          "formula": "I = U ÷ R",
+          "explicacao": "Lei de Ohm: a corrente é a tensão dividida pela resistência. A tensão pode ser negativa quando o sentido convencional é invertido.",
+          "campos": [
+            {
+              "id": "U",
+              "label": "Tensão (V)"
+            },
+            {
+              "id": "R",
+              "label": "Resistência (Ω)"
+            }
+          ]
+        },
+        {
+          "id": "i-q-t",
+          "formula": "I = Q ÷ Δt",
+          "explicacao": "A corrente é a carga que passa por unidade de tempo. Aceita carga negativa (sentido oposto) e nunca divide por tempo zero.",
+          "campos": [
+            {
+              "id": "Q",
+              "label": "Carga elétrica (C)"
+            },
+            {
+              "id": "T",
+              "label": "Tempo (s)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resistencia",
+      "simbolo": "R",
+      "nome": "Resistência",
+      "unidade": "Ω",
+      "descricao": "A resistência elétrica é a oposição à passagem da corrente. Mede-se em ohms (Ω) e não pode ser negativa.",
+      "calculos": [
+        {
+          "id": "r-u-i",
+          "formula": "R = U ÷ I",
+          "explicacao": "Lei de Ohm: a resistência é a tensão dividida pela corrente. O resultado tem de ser positivo — se os sinais de tensão e corrente coincidirem, obtém-se um valor válido.",
+          "campos": [
+            {
+              "id": "U",
+              "label": "Tensão (V)"
+            },
+            {
+              "id": "I",
+              "label": "Corrente (A)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "potencia",
+      "simbolo": "P",
+      "nome": "Potência",
+      "unidade": "W",
+      "descricao": "A potência elétrica é a energia consumida ou fornecida por unidade de tempo. Mede-se em watts (W).",
+      "calculos": [
+        {
+          "id": "p-u-i",
+          "formula": "P = U × I",
+          "explicacao": "A potência é o produto da tensão pela corrente. Sinais iguais ou opostos indicam, respetivamente, potência consumida ou fornecida.",
+          "campos": [
+            {
+              "id": "U",
+              "label": "Tensão (V)"
+            },
+            {
+              "id": "I",
+              "label": "Corrente (A)"
+            }
+          ]
+        },
+        {
+          "id": "p-e-t",
+          "formula": "P = E ÷ Δt",
+          "explicacao": "A potência é a energia transferida por unidade de tempo. Aceita energia negativa e nunca divide por tempo zero.",
+          "campos": [
+            {
+              "id": "E",
+              "label": "Energia (J)"
+            },
+            {
+              "id": "T",
+              "label": "Tempo (s)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "circuitos": [
+    {
+      "id": "desenhar",
+      "nome": "Desenhar circuito",
+      "explicacao": "Área livre para desenhar o teu próprio circuito elétrico com os símbolos da paleta."
+    },
+    {
+      "id": "prontos",
+      "nome": "Circuitos montados",
+      "explicacao": "Circuitos já montados e a funcionar, para ver, testar e alterar."
+    }
+  ],
+  "autores": [
+    {
+      "nome": "Santiago Correia",
+      "contacto": "scorreia.116362@alunos.eps.pt"
+    },
+    {
+      "nome": "Filipe Kartsev",
+      "contacto": "fkartsev.11599@alunos.eps.pt"
+    }
+  ]
+}
