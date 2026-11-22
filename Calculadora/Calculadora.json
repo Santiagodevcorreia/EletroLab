@@ -1,0 +1,167 @@
+{
+  "grandezas": [
+    {
+      "id": "tensao",
+      "simbolo": "U",
+      "nome": "Tensão",
+      "unidade": "V",
+      "descricao": "A tensão elétrica (ou diferença de potencial) é a energia por unidade de carga entre dois pontos de um circuito. Mede-se em volts (V).",
+      "calculos": [
+        {
+          "id": "u-r-i",
+          "formula": "U = R × I",
+          "explicacao": "Num condutor óhmico, a tensão é o produto da resistência pela corrente. Uma corrente negativa tem sentido contrário ao escolhido como referência.",
+          "campos": [
+            {
+              "id": "R",
+              "label": "Resistência (Ω)"
+            },
+            {
+              "id": "I",
+              "label": "Corrente (A)"
+            }
+          ]
+        },
+        {
+          "id": "u-e-q",
+          "formula": "U = E ÷ Q",
+          "explicacao": "A tensão é a energia transferida por unidade de carga entre dois pontos. Energia e carga podem ser negativas quando representam libertação ou sentido inverso.",
+          "campos": [
+            {
+              "id": "E",
+              "label": "Energia (J)"
+            },
+            {
+              "id": "Q",
+              "label": "Carga elétrica (C)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "corrente",
+      "simbolo": "I",
+      "nome": "Corrente",
+      "unidade": "A",
+      "descricao": "A corrente elétrica mede a carga que atravessa uma secção do condutor por unidade de tempo. O sinal indica o sentido. Por exemplo, −20 mA correspondem a 20 mA no sentido contrário ao escolhido como referência.",
+      "calculos": [
+        {
+          "id": "i-u-r",
+          "formula": "I = U ÷ R",
+          "explicacao": "Pela Lei de Ohm, a corrente num condutor óhmico é a tensão dividida pela resistência. Usa como referência positiva da tensão o terminal por onde entra a corrente de referência.",
+          "campos": [
+            {
+              "id": "U",
+              "label": "Tensão (V)"
+            },
+            {
+              "id": "R",
+              "label": "Resistência (Ω)"
+            }
+          ]
+        },
+        {
+          "id": "i-q-t",
+          "formula": "I = Q ÷ Δt",
+          "explicacao": "A corrente média é a carga que atravessa uma secção do condutor dividida pelo intervalo de tempo. O sinal do resultado é relativo ao sentido escolhido como referência.",
+          "campos": [
+            {
+              "id": "Q",
+              "label": "Carga elétrica (C)"
+            },
+            {
+              "id": "T",
+              "label": "Tempo (s)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resistencia",
+      "simbolo": "R",
+      "nome": "Resistência",
+      "unidade": "Ω",
+      "descricao": "A resistência elétrica é a oposição à passagem da corrente. Mede-se em ohms (Ω) e não pode ser negativa.",
+      "calculos": [
+        {
+          "id": "r-u-i",
+          "formula": "R = U ÷ I",
+          "explicacao": "Lei de Ohm: a resistência é a tensão dividida pela corrente. O resultado tem de ser positivo — se os sinais de tensão e corrente coincidirem, obtém-se um valor válido.",
+          "campos": [
+            {
+              "id": "U",
+              "label": "Tensão (V)"
+            },
+            {
+              "id": "I",
+              "label": "Corrente (A)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "potencia",
+      "simbolo": "P",
+      "nome": "Potência",
+      "unidade": "W",
+      "descricao": "A potência elétrica mede a energia transferida por unidade de tempo. Mede-se em watts (W).",
+      "calculos": [
+        {
+          "id": "p-u-i",
+          "formula": "P = U × I",
+          "explicacao": "A potência elétrica calcula-se por P = U × I. Se a referência da corrente entra pelo terminal marcado como positivo para a tensão, P > 0 indica energia recebida e P < 0 indica energia fornecida.",
+          "campos": [
+            {
+              "id": "U",
+              "label": "Tensão (V)"
+            },
+            {
+              "id": "I",
+              "label": "Corrente (A)"
+            }
+          ]
+        },
+        {
+          "id": "p-e-t",
+          "formula": "P = E ÷ Δt",
+          "explicacao": "A potência média é a energia transferida dividida pelo intervalo de tempo. O sinal depende do sentido escolhido como positivo para a transferência.",
+          "campos": [
+            {
+              "id": "E",
+              "label": "Energia (J)"
+            },
+            {
+              "id": "T",
+              "label": "Tempo (s)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "circuitos": [
+    {
+      "id": "desenhar",
+      "nome": "Desenhar circuito",
+      "explicacao": "Área livre para desenhar o teu próprio circuito elétrico com os símbolos da paleta."
+    },
+    {
+      "id": "prontos",
+      "nome": "Circuitos montados",
+      "explicacao": "Circuitos já montados e a funcionar, para ver, testar e alterar."
+    }
+  ],
+  "autores": [
+    {
+      "nome": "Santiago Correia",
+      "contacto": "scorreia.116362@alunos.eps.pt"
+    },
+    {
+      "nome": "Filipe Kartsev",
+      "contacto": "fkartsev.11599@alunos.eps.pt"
+    }
+  ]
+}
